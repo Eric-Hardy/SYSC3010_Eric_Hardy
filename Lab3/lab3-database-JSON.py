@@ -59,5 +59,8 @@ for row in cursor:
     print(row['city'],row['windSpeed'])
 
 #cursor.execute('''DROP TABLE wind''')
+current = data["weather"]
+current = current[0]
+print ("descriptions: ", current["description"])
 dbconnect.close()
 
